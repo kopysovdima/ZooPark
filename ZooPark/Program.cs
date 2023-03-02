@@ -8,7 +8,7 @@ namespace ZooPark
         static void Main(string[] args)
         {
             Zoopark zoopark = new Zoopark();
-            zoopark.StartExcursion();  
+            zoopark.Work();  
         }
     }
 }

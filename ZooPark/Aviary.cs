@@ -12,15 +12,15 @@ namespace ZooPark
 
         public Aviary(string name, List<Animal> animals)
         {
-            _name = name;
+            Name = name;
             _animals = animals;
         }
 
-        public string _name { get; private set; }
+        public string Name { get; private set; }
 
         public void ShowAviary()
         {
-            Console.WriteLine($"В {_name} вальере {_animals.Count}  животных");
+            Console.WriteLine($"В {Name} вальере {_animals.Count}  животных");
 
             foreach (var animal in _animals)
             {

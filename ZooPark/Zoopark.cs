@@ -19,18 +19,7 @@ namespace ZooPark
             }
         }
 
-        public void ShowAllAviary()
-        {
-            Console.WriteLine("Вальеры:");
-
-            for (int i = 0; i < _aviaries.Count; i++)
-            {
-                int numberAviary = i + 1;
-                Console.WriteLine($"{numberAviary} {_aviaries[i]._name}");
-            }
-        }
-
-        public void StartExcursion()
+        public void Work()
         {
             Zoopark zoopark = new Zoopark();
 
@@ -66,7 +55,18 @@ namespace ZooPark
             }
         }
 
-        private static int ReadInt()
+        private void ShowAllAviary()
+        {
+            Console.WriteLine("Вальеры:");
+
+            for (int i = 0; i < _aviaries.Count; i++)
+            {
+                int numberAviary = i + 1;
+                Console.WriteLine($"{numberAviary} {_aviaries[i].Name}");
+            }
+        }
+
+        private int ReadInt()
         {
             int result;
 
